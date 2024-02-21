@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body a{
+  text-decoration: none;
+}
+
+.custom-navbar {
+  background: #567c6d;
+}
+
+.product-title {
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
