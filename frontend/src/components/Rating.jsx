@@ -1,6 +1,6 @@
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa'
 
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 
 const Rating = ({value, text}) => {
     const [spans, setSpans] = useState([]);
@@ -18,7 +18,7 @@ const Rating = ({value, text}) => {
       return newSpans
     }
 
-    useState(() => {
+    useEffect(() => {
       setSpans(generateSpans())
     }, [value])
 
